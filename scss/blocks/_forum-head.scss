@@ -1,0 +1,94 @@
+.forum-head {
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 62px 0;
+
+        @media(max-width: $breakpoint1024) {
+            flex-direction: column;
+            gap: 12px;
+        }
+        @media(max-width: $breakpoint768) {
+            padding: 48px 0;
+        }
+        @media(max-width: $breakpoint600) {
+            padding: 36px 0 16px;
+            gap: 6px;
+        }
+    }
+    &__title {
+        flex-shrink: 0;
+        font-family: $font-title;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 117%;
+        text-transform: uppercase;
+        color: $black;
+
+        height: fit-content;
+        width: fit-content;
+        position: relative;
+        padding-left: 35px;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 50px;
+        }
+        @media(max-width: $breakpoint600) {
+            font-size: 30px;
+            padding-left: 23px;
+        }
+        @media(max-width: $breakpoint375) {
+            font-size: 28px;
+        }
+
+        &::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: $main-color;
+    
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+
+            @media(max-width: $breakpoint600) {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    &__text {
+        max-width: 786px;
+        margin-top: 34px;
+        font-weight: 500;
+        font-size: 20px;
+        color: $black;
+
+        @media(max-width: $breakpoint1024) {
+            margin-top: 0;
+            padding-left: 35px;
+        }
+        @media(max-width: $breakpoint600) {
+            font-size: 16px;
+            padding-left: 23px;
+        }
+    }
+    &__banner {
+        height: 592px;
+
+        @media(max-width: $breakpoint1024) {
+            height: 470px;
+        }
+        @media(max-width: $breakpoint600) {
+            height: 250px;
+        }
+    }
+    &__img {
+        height: 100%;
+        object-fit: cover;
+    }
+}

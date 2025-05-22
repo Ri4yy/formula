@@ -1,0 +1,126 @@
+.format-detail {
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
+        gap: 20px;
+
+        @media(max-width: $breakpoint1024) {
+            grid-template-columns: 1fr;
+            gap: 28px;
+        }
+        @media(max-width: $breakpoint480) {
+            gap: 16px;
+        }
+    }
+    &__left {
+        @media(max-width: $breakpoint1024) {
+            order: 2;
+        }
+    }
+    &__head {
+        &--desktop {
+            @media(max-width: $breakpoint1024) {
+                display: none;
+            }
+        }
+        &--mobile {
+            display: none;
+
+            @media(max-width: $breakpoint1024) {
+                display: block;
+            }
+        }
+    }
+    &__date {
+        font-weight: 500;
+        font-size: 16px;
+        color: $main-color;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 14px;
+        }
+    }
+    &__title {
+        margin-top: 8px;
+        font-family: $font-title;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 117%;
+        text-transform: uppercase;
+        color: $black;
+        text-wrap-style: pretty;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 32px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 20px;
+        }
+
+        & span {
+            color: $main-color;
+        }
+    }
+    &__description {
+        margin-top: 46px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media(max-width: $breakpoint1024) {
+            margin-top: 0;
+        }
+
+        & p {
+            font-weight: 500;
+            font-size: 16px;
+            color: $black;
+        }
+        & a {
+            font-weight: 500;
+            font-size: 16px;
+            color: $main-color;
+        }
+
+        & li {
+            position: relative;
+            padding-left: 32px;
+    
+            @media(max-width: $breakpoint600) {
+                padding-left: 24px;
+            }
+    
+            &::before {
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: 13px;
+    
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: $main-color;
+    
+                @media(max-width: $breakpoint600) {
+                    left: 9px;
+                }
+            }
+        }
+    }
+    &__img {
+        justify-self: flex-end;
+        
+        & img {
+            // width: 100%;
+            object-fit: cover;
+        }
+
+        @media(max-width: $breakpoint1024) {
+            order: 1;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+}

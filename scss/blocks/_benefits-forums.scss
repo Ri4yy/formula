@@ -1,0 +1,81 @@
+.benefits-forums {
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 20px;
+        counter-reset: benefit 0;
+
+        @media(max-width: $breakpoint768) {
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+        }
+        @media(max-width: $breakpoint480) {
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+    }
+    &__item {
+        counter-increment: benefit;
+        border: 1px solid rgba(70, 70, 70, .6);
+        border-radius: 10px;
+        padding: 18px 15px;
+        cursor: pointer;
+
+        @media(max-width: $breakpoint768) {
+            padding: 14px 10px 10px;
+        }
+
+        &:hover {
+            & .benefits-forums__item-number {
+                &::before {
+                    color: $main-color;
+                }
+            }
+        }
+
+        &-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        &-name {
+            font-weight: 700;
+            font-size: 24px;
+            color: $black;
+
+            @media(max-width: $breakpoint768) {
+                font-size: 18px;
+            }
+        }
+        &-text {
+            margin-top: 7px;
+            
+            font-weight: 500;
+            font-size: 20px;
+            color: $black;
+
+            @media(max-width: $breakpoint768) {
+                font-size: 15px;
+            }
+        }
+        &-number {
+            &::before {
+                content: '0' counter(benefit);
+                font-family: $font-title;
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 117%;
+                text-transform: uppercase;
+                text-align: right;
+                color: rgba(70, 70, 70, 0.46);
+                transition: color .3s;
+
+                @media(max-width: $breakpoint768) {
+                    font-size: 48px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.swiper-btn {
+    display: flex;
+    flex-shrink: 0;
+
+    position: relative;
+    top: -13px;
+
+    @media(max-width: $breakpoint600) {
+        display: none;
+    }
+
+    &.swiper-button-lock {
+        display: block;
+    }
+    &.swiper-button-disabled {
+        & svg {
+            fill: rgba(70, 70, 70, .6);
+        }
+    }
+    & svg {
+        fill: $main-color;
+    }
+}

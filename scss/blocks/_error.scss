@@ -1,0 +1,36 @@
+.error {
+
+    &__title {
+        font-family: $font-title;
+        font-weight: 700;
+        font-size: 300px;
+        line-height: 117%;
+        text-transform: uppercase;
+        text-align: center;
+        color: $black;
+
+        & span {
+            color: $main-color;
+        }
+
+        @media(max-width: $breakpoint768) {
+            font-size: 250px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 160px;
+        }
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 24px;
+        text-align: center;
+        color: $black;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 20px;
+        }
+    }
+    &__btn {
+        margin: 14px auto 0;
+    }
+}

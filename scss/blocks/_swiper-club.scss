@@ -1,0 +1,46 @@
+.swiper-club {
+
+    &__text {
+        font-family: $font-title;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 117%;
+        text-transform: uppercase;
+        text-align: center;
+        color: $black;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 28px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 20px;
+        }
+    }
+    &__pagination {
+        margin-top: 14px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        @media(max-width: $breakpoint768) {
+            gap: 8px;
+        }
+
+        & .swiper-pagination-bullet {
+            width: 13px;
+            height: 13px;
+            margin: 0 !important;
+            background: rgba(70, 70, 70, .6);
+            opacity: 1 !important;
+
+            @media(max-width: $breakpoint768) {
+                width: 10px;
+                height: 10px;
+            }
+
+            &-active {
+                background: $main-color;
+            }
+        }
+    }
+}

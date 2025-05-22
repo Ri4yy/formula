@@ -1,0 +1,38 @@
+.gallery {
+
+    &__wrapper {
+        max-width: 710px;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        gap: 28px;
+
+        @media(max-width: $breakpoint480) {
+            gap: 12px;
+        }
+    }
+    &__swiper-btn {
+        display: flex;
+        flex-shrink: 0;
+
+        position: relative;
+        top: -22px;
+
+        &.swiper-button-lock {
+            display: block;
+        }
+        &.swiper-button-disabled {
+            & svg {
+                fill: #d9d9d9;
+            }
+        }
+        & svg {
+            fill: $main-color;
+
+            & path {
+                fill-opacity: 1;
+            }
+        }
+    }
+}

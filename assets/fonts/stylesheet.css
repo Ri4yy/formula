@@ -1,16 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 @font-face {
-    font-family: 'Gilroy';
-    src: url('Gilroy-Regular.eot');
-    src: local('Gilroy Regular'), local('Gilroy-Regular'),
-        url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-Regular.woff2') format('woff2'),
-        url('Gilroy-Regular.woff') format('woff'),
-        url('Gilroy-Regular.ttf') format('truetype');
+    font-family: 'Times New Roman';
+    src: url('timesnewromanpsmt.ttf');
+    src: local('Times New Roman Regular'), local('timesnewromanpsmt'),
+        url('timesnewromanpsmt.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Gilroy';
     src: url('Gilroy-ExtraboldItalic.eot');
     src: local('Gilroy Extrabold Italic'), local('Gilroy-ExtraboldItalic'),
@@ -236,5 +235,5 @@
         url('Gilroy-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
-}
+} */
 

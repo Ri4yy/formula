@@ -4,38 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="./assets/libs/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/assets/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <a href="/" class="logo">
-                    <img src="" alt="">
+                <a href="/" class="header__logo" style="animation-play-state: running;">
+                    <img src="/assets/img/icons/logo.svg" alt="">
                 </a>
                 <nav class="menu">
                     <ul class="menu-nav">
-                        <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link menu-nav__link--active">Ссылка 1</a>
+                        <li class="menu-nav__item ui-anim-flip">
+                            <a href="" style="animation-play-state: running;">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper menu-nav__link menu-nav__link--active">Главная</span>
+                                    <span class="ui-menu-item-wrapper menu-nav__link">Главная</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-nav__item ui-anim-flip">
+                            <a href="" style="animation-play-state: running;">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper menu-nav__link">форматы</span>
+                                    <span class="ui-menu-item-wrapper menu-nav__link">форматы</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-nav__item ui-anim-flip">
+                            <a href="" style="animation-play-state: running;">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper menu-nav__link">календарь</span>
+                                    <span class="ui-menu-item-wrapper menu-nav__link">календарь</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-nav__item ui-anim-flip">
+                            <a href="" style="animation-play-state: running;">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper menu-nav__link">о клубе</span>
+                                    <span class="ui-menu-item-wrapper menu-nav__link">о клубе</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="menu-nav__item dropdown-menu dropdown-menu--relative ui-anim-flip">
+                            <a href="" class="dropdown-menu__toggle" style="animation-play-state: running;">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper menu-nav__link">новости</span>
+                                    <span class="ui-menu-item-wrapper menu-nav__link">новости</span>
+                                </div>
+                                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 9L-2.38418e-07 1.71515L1.64576 0L7 5.57576L12.3531 0L14 1.71394L7 9Z" />
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu__container">
+                                <div class="dropdown">
+                                    <div class="dropdown__wrapper">
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__item">
+                                                <a href="" class="dropdown__link">Репортажи</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-nav__item ui-anim-flip">
+                            <a href="" style="animation-play-state: running;">
+                                <div class="ui-flip-anim-wrapp">
+                                    <span class="ui-menu-item-wrapper menu-nav__link">контакты</span>
+                                    <span class="ui-menu-item-wrapper menu-nav__link">контакты</span>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- <li class="menu-nav__item">
+                            <a href="" class="menu-nav__link menu-nav__link--active">ГЛАВНАЯ</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 2</a>
+                            <a href="" class="menu-nav__link">форматы</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 3</a>
+                            <a href="" class="menu-nav__link">КАЛЕНДАРЬ</a>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 4</a>
+                            <a href="" class="menu-nav__link">о КЛУБЕ</a>
+                        </li>
+                        <li class="menu-nav__item dropdown-menu dropdown-menu--relative">
+                            <a href="" class="menu-nav__link dropdown-menu__toggle">
+                                НОВОСТИ
+                                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 9L-2.38418e-07 1.71515L1.64576 0L7 5.57576L12.3531 0L14 1.71394L7 9Z" />
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu__container">
+                                <div class="dropdown">
+                                    <div class="dropdown__wrapper">
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__item">
+                                                <a href="" class="dropdown__link">Репортажи</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="menu-nav__item">
-                            <a href="" class="menu-nav__link">Ссылка 5</a>
-                        </li>
+                            <a href="" class="menu-nav__link">КОНТАКТЫ</a>
+                        </li> -->
                     </ul>
                 </nav>
-                <div class="header__contacts">
-                    <a href="tel:" class="header__phone">8 (999) 999-99-99</a>
-                    <a href="mailto:" class="header__mail">test-test@test.ru</a>
+                <div class="header__right">
+                    <button class="header__btn" style="animation-play-state: running;">Оставить заявку</button>
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                <img src="/assets/img/icons/i-tg.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                <img src="/assets/img/icons/i-vk.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <button class="btn-menu">
                     <span></span>
@@ -44,11 +136,549 @@
                 </button>
             </div>
         </div>
+        <div class="header-mobile">
+            <div class="header-mobile__wrapper">
+                <ul class="header-mobile__list">
+                    <li class="header-mobile__item">
+                        <a href="" class="header-mobile__link">Главная</a>
+                    </li>
+                    <li class="header-mobile__item">
+                        <a href="" class="header-mobile__link">Форматы</a>
+                    </li>
+                    <li class="header-mobile__item">
+                        <a href="" class="header-mobile__link">Календарь</a>
+                    </li>
+                    <li class="header-mobile__item">
+                        <a href="" class="header-mobile__link">О клубе</a>
+                    </li>
+                    <li class="header-mobile__item">
+                        <a href="" class="header-mobile__link">Новости</a>
+                    </li>
+                    <li class="header-mobile__item">
+                        <a href="" class="header-mobile__link">Репортажи</a>
+                    </li>
+                    <li class="header-mobile__item">
+                        <a href="" class="header-mobile__link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="header-mobile__bottom">
+                    <p class="header-mobile__text">Свяжитесь с нами:</p>
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                <img src="/assets/img/icons/i-tg.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                <img src="/assets/img/icons/i-vk.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="btn header-mobile__btn">Оставить заявку</button>
+                    <a href="tel:" class="header-mobile__phone">+7(8352) 22-31-57</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <script src="./assets/libs/jquery.min.js"></script>
-    <script src="./assets/libs/swiper-bundle.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/swiper.js"></script>
+    <main>
+        <!-- Баннер -->
+        <section class="section section--banner">
+            <div class="container">
+                <div class="banner">
+                    <div class="banner__wrapper">
+                        <h1 class="banner__title">бизнес<br> клуб</h1>
+                        <div class="banner__inner">
+                            <p class="banner__text">Деловое сообщество для собственников и топ-менеджеров среднего и крупного бизнеса</p>
+                            <a href="" class="btn btn--dark banner__btn">
+                                Подробнее о Мероприятиях
+                                <svg width="29" height="19" viewBox="0 0 29 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 9.75H26.5M26.5 9.75L17 1.75M26.5 9.75L17 17.25" stroke-width="2" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Преимущества -->
+        <section class="section section--type-1">
+            <div class="container">
+                <div class="advantages">
+                    <div class="advantages__wrapper">
+                        <div class="advantages__item">
+                            <div class="advantages__item-number">
+                                <span>2000</span>
+                            </div>
+                            <div class="advantages__item-right">
+                                <span class="advantages__item-title">бизнес-контактов</span>
+                                <p class="advantages__item-text">собственников и топ-менеджеров среднего и крупного бизнеса</p>
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__item-number">
+                                <span>20</span>
+                            </div>
+                            <div class="advantages__item-right">
+                                <span class="advantages__item-title">городов</span>
+                                <p class="advantages__item-text">охватывает география бизнеса участников</p>
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__item-number">
+                                <span>26</span>
+                            </div>
+                            <div class="advantages__item-right">
+                                <span class="advantages__item-title">отраслей</span>
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__item-number">
+                                <span>>30</span>
+                            </div>
+                            <div class="advantages__item-right">
+                                <span class="advantages__item-title">бизнес-мероприятий в год</span>
+                                <p class="advantages__item-text">+ неформальный нетворкинг 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Миссия -->
+        <section class="section section--type-1">
+            <div class="container">
+                <h2 class="dark">миссия</h2>
+                <div class="container__inner">
+                    <div class="about-club">
+                        <div class="about-club__wrapper">
+                            <div class="about-club__item">
+                                <p class="about-club__item-text">Клуб поддерживает проекты, которые помогают участникам достигать новых высот в бизнесе и улучшают жизнь всего общества, в том числе содействуют развитию молодых талантов, поддерживают людей, находящихся в сложных жизненных обстоятельствах, развивают науку, культуру, спорт и способствуют распространению ценностей позитивного совместного созидания.</p>
+                            </div>
+                            <div class="about-club__item">
+                                <p class="about-club__item-text">Клуб объединяет успешных людей по всему миру, разделяющих ценности сообщества: взаимное уважение, позитивный взгляд на мир, постоянное стремление к личностному и профессиональному росту, готовность обмениваться опытом, открытость к сотрудничеству и реализации совместных деловых и благотворительных инициатив.</p>
+                            </div>
+                            <div class="about-club__item about-club__item--target">
+                                <span class="about-club__item-title">Цель Клуба</span>
+                                <p class="about-club__item-text">Создать позитивное и открытое пространство доверия, в котором участники смогут формировать взаимовыгодные и общественно полезные партнерства, преумножать социальный капитал и открывать доступ к опыту, ресурсам и взаимной поддержке других участников.</p>
+                            </div>
+                        </div>
+                        <div class="about-club__bottom">
+                            <a href="" class="btn btn--dark">
+                                Подробнее о Клубе
+                                <svg width="29" height="19" viewBox="0 0 29 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.25 9.75H26.75M26.75 9.75L17.25 1.75M26.75 9.75L17.25 17.25" stroke-width="2" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форматы -->
+        <section class="section section--type-1 section--bg-dark">
+            <div class="container">
+                <div class="formats">
+                    <div class="formats__head">
+                        <h2 class="light">Форматы</h2>
+                        <a href="" class="btn btn--light">
+                            Смотреть все
+                            <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 9.25H26.5M26.5 9.25L17 1.25M26.5 9.25L17 16.75" stroke-width="2" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="formats__top">
+                        <p class="formats__text">Бизнес-клуб "Формула Роста" проводит мероприятия, решающие основные задачи организаций Чувашской Республики. Разнонаправленные форматы позволят участникам эффективно развивать свои навыки, обмениваться опытом и налаживать полезные контакты.</p>
+                    </div>
+                    <div class="formats__wrapper">
+                        <div class="formats__item">
+                            <div class="format-card" style="--bg-image:url(/assets/img/formats/format-1.png)">
+                                <div class="format-card__body">
+                                    <h3 class="format-card__title">Бизнес-форумы</h3>
+                                    <span class="format-card__text">OFFLINE ФОРМАТ</span>
+                                    <span class="format-card__text">30+ компаний</span>
+                                </div>
+                                <div class="format-card__bottom">
+                                    <a href="" class="btn format-card__link">
+                                        Подробнее
+                                        <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 9.25H26.5M26.5 9.25L17 1.25M26.5 9.25L17 16.75" stroke-width="2" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formats__item">
+                            <div class="format-card" style="--bg-image:url(/assets/img/formats/format-2.png)">
+                                <div class="format-card__body">
+                                    <h3 class="format-card__title">Нетворкинг для предпринимателей</h3>
+                                    <span class="format-card__text">OFFLINE ФОРМАТ</span>
+                                    <span class="format-card__text">до 50 гостей</span>
+                                </div>
+                                <div class="format-card__bottom">
+                                    <a href="" class="btn format-card__link">
+                                        Подробнее
+                                        <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 9.25H26.5M26.5 9.25L17 1.25M26.5 9.25L17 16.75" stroke-width="2" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formats__item">
+                            <div class="format-card" style="--bg-image:url(/assets/img/formats/format-3.png)">
+                                <div class="format-card__body">
+                                    <h3 class="format-card__title">Корпоративные мероприятия</h3>
+                                    <span class="format-card__text">OFFLINE ФОРМАТ</span>
+                                    <span class="format-card__text">20+ компаний</span>
+                                </div>
+                                <div class="format-card__bottom">
+                                    <a href="" class="btn format-card__link">
+                                        Подробнее
+                                        <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0 9.25H26.5M26.5 9.25L17 1.25M26.5 9.25L17 16.75" stroke-width="2" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formats__item">
+                            <a href="" class="btn btn--light">
+                                Смотреть все
+                                <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 9.25H26.5M26.5 9.25L17 1.25M26.5 9.25L17 16.75" stroke-width="2" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Календарь -->
+        <section class="section section--type-1 section--calendar">
+            <div class="container">
+                <h2 class="dark">Календарь</h2>
+                <div class="container__inner">
+                    <div class="calendar">
+                        <div class="calendar__top">
+                            <h3 class="calendar__top-title">МЕРОПРИЯТИЯ<span> 2025</span></h3>
+                        </div>
+                        <div class="calendar__wrapper">
+                            <div class="calendar__item">
+                                <div class="calendar__item-left">
+                                    <span class="calendar__item-month">апрель</span>
+                                    <span class="calendar__item-day">25</span>
+                                </div>
+                                <div class="calendar__item-right">
+                                    <p>Вечер поэзии и музыки для первых лиц компании</p>
+                                </div>
+                            </div>
+                            <div class="calendar__item">
+                                <div class="calendar__item-left">
+                                    <span class="calendar__item-month">июнь</span>
+                                    <span class="calendar__item-day">18</span>
+                                </div>
+                                <div class="calendar__item-right">
+                                    <p>Битва корпораций 4.0 "Матушка земля"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calendar__bottom">
+                            <a href="" class="btn btn--dark">
+                                Подробнее о Мероприятиях
+                                <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 9.25H26.5M26.5 9.25L17 1.25M26.5 9.25L17 16.75" stroke-width="2" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Кто в клубе -->
+        <section class="section section--type-1">
+            <div class="container">
+                <h2 class="dark">Кто в клубе</h2>
+                <div class="container__inner">
+                    <div class="club">
+                        <div class="club__top">
+                            <div class="club__swiper-btn club__swiper-btn--prev">
+                                <svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M-8.9407e-07 13.5L13.7603 -2.98023e-07L17 3.17396L6.46801 13.5L17 23.8238L13.7626 27L-8.9407e-07 13.5Z" fill-opacity="0.6" />
+                                </svg>
+                            </div>
+                            <div class="swiper swiper-club">
+                                <div class="swiper-wrapper swiper-club__wrapper">
+                                    <div class="swiper-slide swiper-club__slide">
+                                        <p class="swiper-club__text">Владельцы и топ менеджеры крупного бизнеса</p>
+                                    </div>
+                                    <div class="swiper-slide swiper-club__slide">
+                                        <p class="swiper-club__text">Владельцы и топ менеджеры крупного бизнеса</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-club__pagination"></div>
+                            </div>
+                            <div class="club__swiper-btn club__swiper-btn--next">
+                                <svg width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 13.5L3.23973 -2.98023e-07L0 3.17396L10.532 13.5L0 23.8238L3.23744 27L17 13.5Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="club__wrapper">
+                            <div class="club__left">
+                                <ul class="club__list">
+                                    <li class="club__list-item">
+                                        <p>Предприниматели и руководители среднего и крупного бизнеса</p>
+                                    </li>
+                                    <li class="club__list-item">
+                                        <p>Разнонаправленные отрасли бизнеса</p>
+                                    </li>
+                                    <li class="club__list-item">
+                                        <p>Сотрудничество с админестрацией города Чебоксары и Чувашской Республики</p>
+                                    </li>
+                                </ul>
+                                <button class="club__btn">Оставить заявку</button>
+                            </div>
+                            <div class="club__img">
+                                <img src="/assets/img/photo/club.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Новости -->
+        <section class="section section--type-1 section--bg-dark">
+            <div class="container">
+                <h2 class="light">Новости</h2>
+                <div class="container__inner">
+                    <div class="news">
+                        <div class="news__wrapper">
+                            <div class="news__item">
+                                <div class="news-card">
+                                    <a href="" class="news-card__top">
+                                        <img src="/assets/img/news/news-1.png" class="news-card__img" alt="">
+                                        <span class="news-card__read">
+                                            Читать
+                                            <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 6.32258H19M19 6.32258L12.1887 12M19 6.32258L12.1887 1" stroke-width="2" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <div class="news-card__body">
+                                        <a href="" class="news-card__name">Битва корпораций <span>"Агент 007"</span> - 3 этап</a>
+                                        <p class="news-card__text">15 февраля 2025 г. прошло спортивное соревнование в рамках проекта "Битва корпораций 3.0". Мероприятие</p>
+                                        <span class="news-card__date">15 Фев 2025 г.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news__item">
+                                <div class="news-card">
+                                    <a href="" class="news-card__top">
+                                        <img src="/assets/img/news/news-2.png" class="news-card__img" alt="">
+                                        <span class="news-card__read">
+                                            Читать
+                                            <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 6.32258H19M19 6.32258L12.1887 12M19 6.32258L12.1887 1" stroke-width="2" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <div class="news-card__body">
+                                        <a href="" class="news-card__name">Битва корпораций <span>"Агент 007"</span> - 3 этап</a>
+                                        <p class="news-card__text">15 февраля 2025 г. прошло спортивное соревнование в рамках проекта "Битва корпораций 3.0". Мероприятие</p>
+                                        <span class="news-card__date">15 Фев 2025 г.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__bottom">
+                            <a href="" class="btn news__btn">
+                                Все новости
+                                <svg width="29" height="19" viewBox="0 0 29 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.25 9.75H26.75M26.75 9.75L17.25 1.75M26.75 9.75L17.25 17.25" stroke="#F9A11E" stroke-width="2" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal modal-form">
+        <div class="modal__body modal-form__body">
+            <div class="modal__wrapper modal-form__wrapper">
+                <button class="close-modal modal-form__close">
+                    <img src="/assets/img/icons/closeModal.svg" alt="">
+                </button>
+                <div class="modal__info">
+                    <div class="modal-form-block">
+                        <div class="modal-form-block__wrapper">
+                            <div class="modal-form-block__top">
+                                <p class="modal-form-block__title">Станьте участником формулы роста</p>
+                                <p class="modal-form-block__subtitle">Оставьте заявку и менеджер с вами свяжется</p>
+                            </div>
+                            <form action="" class="form request-form">
+                                <div class="request-form__wrapper">
+                                    <input type="text" class="input request-form__input" name="name" placeholder="Ваше имя">
+                                    <input type="tel" class="input request-form__input" name="phone" placeholder="Номер телефона">
+                                    <input type="text" class="input request-form__input" name="website" placeholder="Сайт или название вашей компании">
+                                    <input type="email" class="input request-form__input" name="email" placeholder="Электронная почта">
+                                </div>
+                                <div class="request-form__bottom">
+                                    <button class="btn request-form__btn">
+                                        Оставить заявку
+                                    </button>
+                                    <span class="request-form__confirm">
+                                        Нажимая на кнопку “Отправить”, вы соглашаетесь на обработку персональных данных
+                                    </span>
+                                </div>
+                            </form>
+                            <div class="modal-form-block__bottom">
+                                <p class="modal-form-block__bottom-text">Предложения о партнерстве отправляйте на почту</p>
+                                <a href="mailto:dorognoe21@mail.ru" class="modal-form-block__bottom-link">dorognoe21@mail.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-reg">
+        <div class="modal__body modal-reg__body">
+            <div class="modal__wrapper modal-reg__wrapper">
+                <button class="close-modal modal-reg__close">
+                    <img src="/assets/img/icons/closeModal.svg" alt="">
+                </button>
+                <div class="modal__info">
+                    <div class="modal-form-block">
+                        <div class="modal-form-block__wrapper">
+                            <div class="modal-form-block__top">
+                                <p class="modal-form-block__title">Регистрация на мероприятие</p>
+                            </div>
+                            <form action="" class="form request-form">
+                                <div class="request-form__wrapper">
+                                    <div class="request-form__dropdown">
+                                        <div class="request-form__dropdown-selected" id="dropdown-events">
+                                            <span>Вечер поэзии и музыки для первых лиц компании</span>
+                                            <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 12L4.76837e-07 2.28687L2.35108 0L10 7.43434L17.6473 0L20 2.28525L10 12Z" fill-opacity="0.6" />
+                                            </svg>
+                                        </div>
+                                        <div class="request-form__dropdown-container">
+                                            <ul class="request-form__dropdown-list" id="dropdown-list-events">
+                                                <li class="request-form__dropdown-item" data-event="1">Битва корпораций 4.0 "Матушка земля"</li>
+                                                <li class="request-form__dropdown-item" data-event="2">Битва корпораций 3.0 "Матушка земля"</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <input type="text" class="input request-form__input" name="name" placeholder="Ваше имя">
+                                    <input type="tel" class="input request-form__input" name="phone" placeholder="Номер телефона">
+                                    <input type="email" class="input request-form__input" name="email" placeholder="Электронная почта">
+                                    <input type="hidden" name="event" id="selected-event" value="">
+                                </div>
+                                <div class="request-form__bottom">
+                                    <button class="btn request-form__btn">
+                                        Оставить заявку
+                                    </button>
+                                    <span class="request-form__confirm">
+                                        Нажимая на кнопку “Отправить”, вы соглашаетесь на обработку персональных данных
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-success">
+        <div class="modal__body modal-success__body">
+            <div class="modal__wrapper modal-success__wrapper">
+                <button class="close-modal modal-success__close">
+                    <img src="/assets/img/icons/closeModal.svg" alt="">
+                </button>
+                <div class="modal__info">
+                    <div class="modal-success-block">
+                        <img src="/assets/img/icons/success.svg" alt="" class="modal-success-block__icon">
+                        <div class="modal-success-block__wrapper">
+                            <p class="modal-success-block__title">Спасибо!</p>
+                            <p class="modal-success-block__text">Ваше сообщение отправлено. В ближайшее время с вами свяжется наш сотрудник.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__left">
+                    <a href="" class="footer__logo">
+                        <img src="/assets/img/icons/footer-logo.svg" alt="">
+                    </a>
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                <img src="/assets/img/icons/i-tg.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="" class="social-list__link">
+                                <img src="/assets/img/icons/i-vk.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="footer-menu">
+                    <li class="footer-menu__item">
+                        <a href="" class="footer-menu__link">ГЛАВНАЯ</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="" class="footer-menu__link">форматы</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="" class="footer-menu__link">КАЛЕНДАРЬ</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="" class="footer-menu__link">о КЛУБЕ</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="" class="footer-menu__link">НОВОСТИ</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="" class="footer-menu__link">репортажи</a>
+                    </li>
+                    <li class="footer-menu__item">
+                        <a href="" class="footer-menu__link">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+                <div class="footer__right">
+                    <button class="btn footer__btn">Оставить заявку</button>
+                    <a href="tel:" class="footer__phone">+7(8352) 22-31-57</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="" class="footer__link">Политика конфиденциальности</a>
+                <a href="" class="footer__copyright">© HI-TECH MEDIA</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/libs/jquery.min.js"></script>
+    <script src="/assets/libs/swiper-bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/swiper.js"></script>
 </body>
 </html>

@@ -1,0 +1,71 @@
+.btn {
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: $black;
+    text-shadow: 0 4px 8px 0 rgba(0, 24, 72, 0.1);
+
+    transition: all .3s;
+
+    @media(max-width: $breakpoint1024) {
+        padding: 10px 25px;
+        font-size: 18px;
+    }
+    @media(max-width: $breakpoint480) {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    @media(max-width: $breakpoint375) {
+        padding: 10px 14px;
+    }
+
+    &--dark {
+        border: 1px solid $black;
+        background: rgba(255, 255, 255, 0.47);
+
+        & svg {
+            transition: translate .3s;
+        }
+
+        &:hover {
+            border-color: $main-color;
+
+            & svg {
+                translate: 4px;
+            }
+        }
+    }
+    &--light {
+        border: 1px solid #fff;
+        background: #fff;
+
+        & svg {
+            transition: translate .3s;
+        }
+
+        &:hover {
+            color: $main-color;
+
+            & svg {
+                translate: 4px;
+            }
+        }
+    }
+
+    & svg {
+        stroke: $main-color;
+        flex-shrink: 0;
+
+        @media(max-width: $breakpoint768) {
+            width: 23px;
+        }
+    }
+}

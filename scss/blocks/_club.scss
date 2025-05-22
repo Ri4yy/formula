@@ -1,0 +1,159 @@
+.club {
+
+    &__top {
+        max-width: 710px;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+    &__swiper-btn {
+        display: flex;
+        flex-shrink: 0;
+
+        position: relative;
+        top: -13px;
+
+        @media(max-width: $breakpoint600) {
+            display: none;
+        }
+
+        &.swiper-button-lock {
+            display: block;
+        }
+        &.swiper-button-disabled {
+            & svg {
+                fill: rgba(70, 70, 70, .6);
+            }
+        }
+        & svg {
+            fill: $main-color;
+        }
+    }
+    &__wrapper {
+        margin-top: 38px;
+
+        display: flex;
+        gap: 20px;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 28px;
+            flex-direction: column-reverse;
+            gap: 28px;
+        }
+        @media(max-width: $breakpoint480) {
+            gap: 18px;
+        }
+    }
+    &__left {
+        min-width: 480px;
+        width: 40%;
+
+        border-radius: $main-radius;
+        border: 1px solid rgba(70, 70, 70, .6);
+        padding: 90px 32px 44px;
+
+        display: flex;
+        flex-direction: column;
+
+        @media(max-width: $breakpoint1024) {
+            padding: 34px 44px;
+            min-width: 380px;
+        }
+        @media(max-width: $breakpoint768) {
+            width: 100%;
+            min-width: 0;
+        }
+        @media(max-width: $breakpoint480) {
+            padding: 22px 12px;
+        }
+    }
+    &__img {
+        border-radius: $main-radius;
+        overflow: hidden;
+        width: 60%;
+
+        @media(max-width: $breakpoint768) {
+            width: 100%;
+        }
+        @media(max-width: $breakpoint480) {
+            height: 200px;
+        }
+
+        & img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 90px;
+
+        @media(max-width: $breakpoint1024) {
+            margin-bottom: 34px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-bottom: 12px;
+            gap: 18px;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            @media(max-width: $breakpoint480) {
+                gap: 12px;
+            }
+
+            &::before {
+                content: url(/assets/img/icons/i-ok.svg);
+                height: 22px;
+            }
+
+            & p {
+                font-weight: 600;
+                font-size: 20px;
+                color: $black;
+
+                @media(max-width: $breakpoint1024) {
+                    font-size: 18px;
+                }
+                @media(max-width: $breakpoint480) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    &__btn {
+        display: block;
+        margin: auto auto 0;
+        border-radius: 30px;
+        padding: 10px 30px;
+        background: $black;
+
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+        transition: color .3s;
+
+        &:hover {
+            color: $main-color;
+        }
+
+        @media (max-width: 1024px) {
+            padding: 10px 25px;
+            font-size: 18px;
+        }
+        @media (max-width: 480px) {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+    }
+}

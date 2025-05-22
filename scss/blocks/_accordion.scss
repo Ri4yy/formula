@@ -24,7 +24,7 @@
         font-weight: 600;
         font-size: 28px;
         line-height: 130%;
-        color: $main-text;
+        // color: $main-text;
         pointer-events: none;
 
         @media(max-width: $breakpoint768) {
@@ -60,7 +60,7 @@
         width: 36px;
         height: 36px;
         border-radius: 50%;
-        background-color: $secondary-color;
+        // background-color: $secondary-color;
         @media(max-width: $breakpoint768) {
             width: 24px;
             height: 24px;

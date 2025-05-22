@@ -1,0 +1,197 @@
+.about {
+
+    &__top {
+        margin-top: 48px;
+        max-width: 710px;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 38px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 28px;
+        }
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 24px;
+        color: #fff;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 22px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 20px;
+        }
+
+        & span {
+            color: $main-color;
+        }
+    }
+    &__text {
+        margin-top: 20px;
+        
+        font-weight: 500;
+        font-size: 20px;
+        color: #fff;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 18px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 12px;
+            font-size: 16px;
+        }
+    }
+    &__wrapper {
+        margin: 48px auto 0;
+        max-width: 800px;
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 38px;
+            gap: 24px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 28px;
+            gap: 12px;
+        }
+    }
+    &__item {
+        max-width: 329px;
+
+        &:hover {
+            & .about__item {
+                &-img {
+                    &::after {
+                        border: 1px solid $main-color;
+                        animation: clippath .5s linear;
+                        z-index: 2;
+                    }
+                }
+                &-name {
+                    color: $main-color;
+                }
+                &-bottom {
+                    margin-top: 26px;
+                    grid-template-rows: 1fr;
+                }
+                &-btn {
+                    opacity: 1;
+                }
+            }
+        }
+        &-img {
+            position: relative;
+            width: fit-content;
+            border: 1px solid #d9d9d9;
+            border-radius: 10px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: -1px;
+                left: -1px;
+                right: -1px;
+                bottom: -1px;
+                transition: all .5s;
+                border-radius: 10px;
+                border: 1px solid transparent;
+                pointer-events: none;
+            }
+
+            & img {
+                border-radius: 10px;
+            }
+        }
+        &-body {
+            margin-top: 26px;
+
+            @media(max-width: $breakpoint768) {
+                margin-top: 16px;
+            }
+            @media(max-width: $breakpoint480) {
+                margin-top: 12px;
+            }
+        }
+        &-name {
+            font-family: $font-title;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 117%;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            transition: color .5s;
+
+            @media(max-width: $breakpoint768) {
+                font-size: 18px;
+            }
+            @media(max-width: $breakpoint480) {
+                font-size: 14px;
+            }
+        }
+        &-text {
+            margin-top: 6px;
+            font-weight: 500;
+            font-size: 20px;
+            text-align: center;
+            color: #fff;
+
+            @media(max-width: $breakpoint768) {
+                margin-top: 4px;
+                font-size: 16px;
+            }
+            @media(max-width: $breakpoint480) {
+                font-size: 12px;
+            }
+        }
+        &-bottom {
+            display: grid;
+            grid-template-rows: 0fr;
+            overflow: hidden;
+            transition: all 0.3s;
+
+            & div {
+                min-height: 0;
+            }
+        }
+        &-btn {
+            margin: 0 auto;
+            color: #fff;
+            border: 1px solid #fff;
+            opacity: 0;
+            transition: all .3s;
+
+            & svg {
+                transition: transform 0.3s;
+            }
+
+            &:hover {
+                border-color: $main-color;
+
+                & svg {
+                    transform: translateX(4px);
+                }
+            }
+        }
+    }
+}
+
+@keyframes clippath {
+    0% {
+        clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    }
+    25% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+    }
+    50% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%);
+    }
+    75% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    100% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
